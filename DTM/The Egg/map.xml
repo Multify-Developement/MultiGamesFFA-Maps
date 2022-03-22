@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
 <map proto="1.4.0" game="Destroy the Monument">
-<name>Aerial Conquest</name>
+<name>The Egg</name>
 <version>1.0.0</version>
-<objective>Destroy the enemy's gold treasure!</objective>
+<objective>Destroy the enemy's beacons!</objective>
 <gamemode>dtm</gamemode>
 <authors>
-    <author name="Zelvak69"/> <!-- Zelvak69 -->
+    <author uuid="b56d143f-bc34-42c9-8270-f8d4736732fd"/> <!-- Zelvak69 -->
 </authors>
 <contributors>
     <contributor uuid="b56d143f-bc34-42c9-8270-f8d4736732fd" contribution="Creating config.xml"></contributor> <!-- IToncek -->
 </contributors>
 <!-- Teams -->
 <teams>
-    <team id="blue-team" color="blue" max="15">Blue</team>
-    <team id="red-team" color="red" max="15">Red</team>
+    <team id="blue-team" color="blue" min="1" max="15">Blue</team>
+    <team id="red-team" color="red" min="1" max="15">Red</team>
 </teams>
 <!-- Kits -->
 <kits>
@@ -47,9 +47,9 @@
 <!-- Monuments -->
 <destroyables completion="100%" repairable="false" show-progress="true" sparks="true">
     <destroyable name="Beacon" owner="blue-team" materials="beacon" region="blue-beacon"/>
-    <destroyable name="Beacon" owner="blue-team" materials="beacon" region="blue-beacon2"/>
+    <destroyable name="Beacon 2" owner="blue-team" materials="beacon" region="blue-beacon2"/>
     <destroyable name="Beacon" owner="red-team" materials="beacon" region="red-beacon"/>
-    <destroyable name="Beacon" owner="red-team" materials="beacon" region="red-beacon2"/>
+    <destroyable name="Beacon 2" owner="red-team" materials="beacon" region="red-beacon2"/>
 </destroyables>
 <!-- Filters -->
 <filters>
@@ -61,7 +61,7 @@
     <!-- Definitions -->
     <union id="monuments">
         <block id="red-beacon">18,160,-37</block>
-        <block id="red-beacon">18,160,37</block>
+        <block id="red-beacon2">18,160,37</block>
         <block id="blue-beacon">82,160,37</block>
         <block id="blue-beacon2">82,160,35</block>
     </union>
